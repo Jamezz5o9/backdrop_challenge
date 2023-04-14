@@ -8,14 +8,7 @@ import com.example.building_backdrop.dtos.response.ApiData;
 import com.example.building_backdrop.exceptions.GenericException;
 import com.example.building_backdrop.service.PaystackService;
 import com.example.building_backdrop.service.UserService;
-import com.example.building_backdrop.utils.Account.Account;
-import com.example.building_backdrop.utils.Account.Data;
 import com.example.building_backdrop.utils.matchNames.ValidateNames;
-import com.fasterxml.jackson.databind.DeserializationFeature;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.squareup.okhttp.OkHttpClient;
-import com.squareup.okhttp.Request;
-import com.squareup.okhttp.ResponseBody;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.text.WordUtils;
@@ -97,7 +90,6 @@ public class UserServiceImpl implements UserService {
               return ApiData.builder()
                         .message(WordUtils.capitalizeFully(foundAccountName))
                         .build();
-
             }
     }
 
