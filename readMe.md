@@ -1,7 +1,8 @@
-**[WHY IS PURE LEVENSHTEIN DISTANCE ALGORITHM MORE EFFECTIVE
-THAN THE BROADER DAMERAU LEVENSHTEIN DISTANCE ALGORITHM]()**
+**WHY IS PURE LEVENSHTEIN DISTANCE ALGORITHM MORE EFFECTIVE
+THAN THE BROADER DAMERAU LEVENSHTEIN DISTANCE ALGORITHM**
         
 ```agsl   
+
     The more specialized Damerau-Levenshtein Distance technique may be preferable 
     than the more general Levenshtein Distance method in circumstances when 
     transpositions of nearby characters are unlikely to occur. This is due to the 
@@ -11,4 +12,13 @@ THAN THE BROADER DAMERAU LEVENSHTEIN DISTANCE ALGORITHM]()**
     unlikely to happen, hence a pure Levenshtein Distance method might be a more efficient 
     and cost-efficient strategy. However, in circumstances when transpositions are common, 
     the Damerau-Levenshtein Distance method would be more appropriate.propriate.
+    
 ```
+
+
+
+                            TESTING
+```agsl                            
+   I made use of Junit5 and Mockito to write my test for all the implementations
+```
+
