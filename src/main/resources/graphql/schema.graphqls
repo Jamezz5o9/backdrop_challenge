@@ -1,0 +1,28 @@
+type Query{
+    getUserAccountName(getUserAccountNameRequest: GetUserAccountNameRequest!): ApiData
+}
+type Mutation{
+    registerUser(userRegistrationRequest: UserRegistrationRequest): ApiData
+    addUserBankAccount(addUserAccountRequest: AddUserAccountRequest): ApiData
+}
+
+type ApiData{
+    message: String
+}
+
+input UserRegistrationRequest{
+    accountNumber: String!
+    accountName: String!
+    bankCode: String
+}
+
+input GetUserAccountNameRequest{
+    accountNumber: String!
+    bankCode: String!
+}
+
+input AddUserAccountRequest{
+    accountNumber: String!
+    bankCode: String!
+    accountName: String!
+}
